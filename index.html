@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-6">
+              <h1 id="city"></h1>
+              <div class="weather-temperature">
+                <p class="last-update">
+                  Last updated:<span class="day-time"></span>
+                </p>
+
+                <div class="d-flex weather-temperature">
+                  <p class="current-temperature">
+                    <span class="temp"></span><span class="units">°c</span>
+                  </p>
+                  <img
+                    class="current-icon"
+                    src=""
+                    alt="Sunny"
+                    width="100px"
+                    id="icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <form id="search-form">
+                <div class="searchbox">
+                  <input
+                    type="search"
+                    placeholder="Enter your city"
+                    id="city-input"
+                    class="form-control"
+                    autocomplete="off"
+                  />
+
+                  <input
+                    type="Submit"
+                    value="search"
+                    class="btn btn-outline-info"
+                  />
+                </div>
+              </form>
+              <br />
+
+              <ul>
+                <li id="conditions"></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+        <small>
+          Created by Khushi Sharma
+        </small>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

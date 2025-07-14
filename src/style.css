@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(
+      89.9deg,
+      rgb(208, 246, 255) 0.1%,
+      rgb(255, 237, 237) 47.9%,
+      rgb(255, 255, 231) 100.2%
+    );
+    font-family: "Poppins", sans-serif;
+  }
+  
+ body {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  text-shadow: grey 0.5px 0.5px;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.weather-app {
+  margin-top: 20px;
+  padding: 25px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.last-update .day-time {
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+
+.day-time:first letter {
+  text-transform: capitalize;
+}
+
+.weather-temperature .temp {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.weather-temperature .units {
+  position: relative;
+  top: -14px;
+  font-weight: 350;
+  font-size: 20px;
+}
+
+.current-temperature .active {
+  color: black;
+  cursor: default;
+}
+
+.current-temperature .active:hover {
+  text-decoration: none;
+}
+
+.btn {
+  margin-top: 5px;
+}
+
+#conditions:first-letter {
+  text-transform: capitalize;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.current-icon {
+  padding-left: 20px;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 5vw;
+}
+
+ul {
+  margin-top: 10px;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
